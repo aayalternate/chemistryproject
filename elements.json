@@ -1,0 +1,700 @@
+{
+  "elements": [
+    { "id": "alkane", "name": "R-H", "symbol": "Alkane", "img": "images/Alkane.jpg.jpeg" },
+    { "id": "alkene", "name": "R=CH₂", "symbol": "Alkene", "img": "images/Alkene.jpg.jpeg" },
+    { "id": "alkyne", "name": "R-C≡CH", "symbol": "Alkyne", "img": "images/Alkyne.jpg.jpeg" },
+    { "id": "alcohol", "name": "R-OH", "symbol": "Alcohol", "img": "images/Alcohol.jpg.jpeg" },
+    { "id": "carboxylic_acid", "name": "R-COOH", "symbol": "Carboxylic Acid", "img": "images/Carboxyllic Acid.jpg.jpeg" },
+    { "id": "acyl_cl", "name": "R-COCl", "symbol": "Acyl Chloride", "img": "images/Acyl Cl.jpg.jpeg" },
+    { "id": "benzene", "name": "C₆H₆", "symbol": "Benzene", "img": "images/Benzene.jpg.jpeg" },
+    { "id": "phenol", "name": "Ar-OH", "symbol": "Phenol", "img": "images/Phenol.jpg.jpeg" },
+    { "id": "amine", "name": "R-NH₂", "symbol": "Amine", "img": "images/Amine.jpg.jpeg" },
+    { "id": "ether", "name": "R-O-R'", "symbol": "Ether", "img": "images/Ether.jpg.jpeg" },
+    { "id": "halogen", "name": "X₂", "symbol": "Halogen", "img": "images/Halogen.jpg.jpeg" },
+    { "id": "nitro", "name": "NO₂", "symbol": "Nitro", "img": "images/Nitro.jpg.jpeg" },
+    { "id": "sulfur", "name": "SO₂", "symbol": "Sulphate", "img": "images/Sulpher.jpg.jpeg" },
+    { "id": "oxidation", "name": "[O]", "symbol": "Oxidation", "img": "images/Oxidation.jpg.jpeg" },
+    { "id": "reduction", "name": "[H]", "symbol": "Reduction", "img": "images/Reduction.jpg.jpeg" },
+    { "id": "aldehyde", "name": "R-CHO", "symbol": "Aldehyde", "img": "images/Aldehyde.jpeg" },
+    { "id": "ketone", "name": "R-CO-R'", "symbol": "Ketone", "img": "images/Ketone.jpeg" },
+    { "id": "amide", "name": "R-CONH₂", "symbol": "Amide", "img": "images/Amide.jpeg" },
+    { "id": "nitrile", "name": "R-CN", "symbol": "Nitrile", "img": "images/Nitrile.jpeg" },
+    { "id": "ester", "name": "R-COOR'", "symbol": "Ester", "img": "images/Ester.jpeg"}
+  ],
+  "reactions": {
+    "acyl_cl-alcohol": {
+      "name": "Ester Formation",
+      "formula": "R-COCl + R'-OH → R-COOR' + HCl",
+      "info": "When an acyl chloride reacts with an alcohol, the chlorine atom is replaced by the alkoxy group (-OR) from the alcohol. A byproduct of hydrogen chloride (HCl) gas is produced, which often appears as white misty fumes.",
+      "fact": "Unlike the reaction between a carboxylic acid and alcohol, this does not require an acid catalyst or heating. This reaction is exothermic and produces HCl gas."
+    },
+    "acyl_cl-benzene": {
+      "name": "Friedel-Crafts Acylation",
+      "formula": "C₆H₆ + R-COCl → C₆H₅COR + HCl",
+      "info": "Benzene reacts with an acyl chloride in the presence of a Lewis acid catalyst, typically aluminum chloride (AlCl₃). The chlorine atom is replaced by the benzene ring, and hydrogen chloride (HCl) is evolved as a byproduct.",
+      "fact": "Unlike many organic reactions that exist in an equilibrium, Friedel-Crafts acylation is essentially irreversible."
+    },
+    "acyl_cl-ether": {
+      "name": "Ether Cleavage",
+      "formula": "R-OR' + R''-COCl → R''-COOR + R'-Cl",
+      "info": "The most common catalyst used for this transformation is zinc chloride (ZnCl_2), though other Lewis acids like AlCl_3 can also be used.",
+      "fact": "This reaction is used to identify unknown ethers."
+    },
+    "acyl_cl-phenol": {
+      "name": "Phenol Acylation",
+      "formula": "C₆H₅OH + R-COCl → C₆H₅OOCR + HCl",
+      "info": "When phenol reacts with an acyl chloride (such as ethanoyl chloride), the hydroxyl group (OH) of the phenol attacks the carbonyl carbon of the acyl chloride.Sodium Hydroxide converts phenol into the phenoxide ion (C₆H₅O-). The phenoxide ion is a much stronger nucleophile than neutral phenol, making the reaction significantly faster.",
+      "fact": "Usually performed at room temperature, though gentle heating may be used depending on the specific acyl chloride."
+    },
+    "alcohol-alkene": {
+      "name": "Alkene Alcohol Addition",
+      "formula": "R-CH=CH₂ + R'-OH → R-CH(OR')-CH₃",
+      "info": "The reaction between an alcohol and an alkene is a common method for synthesizing ethers. This process is known as alkoxylation or, more specifically, the acid-catalyzed addition of alcohols to alkenes.In the presence of a strong acid catalyst (H₂SO₄, H₃PO₄), the alcohol adds across the double bond of the alkene.",
+      "fact": "This is an electrophilic addition reaction following Markovnikov's rule."
+    },
+    "alcohol-carboxylic_acid": {
+      "name": "Esterification",
+      "formula": "R-OH + R'-COOH → R'-COOR + H₂O",
+      "info": "The reaction between a carboxylic acid and an alcohol is a classic organic transformation known as Fischer Esterification. It is a reversible, acid-catalyzed condensation reaction that produces an ester and water.",
+      "fact": "Fischer esterification is reversible and reaches equilibrium."
+    },
+    "alcohol-oxidation": {
+      "name": "Alcohol Oxidation",
+      "formula": "R-CH₂OH + KMnO₄ → R-COOH",
+      "info": "The oxidation of alcohols is a fundamental transformation in organic chemistry, where the carbon-oxygen (C-O) bond is converted into a carbon-oxygen double bond (C=O).",
+      "fact": "Secondary alcohols are oxidized to ketones. Tertiary alcohols do not undergo oxidation under standard conditions."
+    },
+    "alkane-halogen": {
+      "name": "Alkane Halogenation",
+      "formula": "R-H + X₂ → R-X + HX",
+      "info": "Alkane halogenation is a free-radical substitution reaction where one or more hydrogen atoms in an alkane are replaced by halogen atoms (typically chlorine or bromine). This reaction is the primary way to convert relatively unreactive alkanes into more versatile haloalkanes.",
+      "fact": "It requires UV light or high temperatures (around 300°C) to provide the activation energy needed to break the halogen-halogen bond."
+    },
+    "alkene-carboxylic_acid": {
+      "name": "Alkene Carboxylic Acid Addition",
+      "formula": "R-CH=CH₂ + R'-COOH → R-CH(OCOR')-CH₃",
+      "info": "The reaction between an alkene and a carboxylic acid is known as hydro-alkoxyaddition. Similar to the reaction with alcohols, this process produces an ester, but it proceeds via the addition of the acid across the double bond of the alkene.",
+      "fact": "This is a useful alternative to Fischer esterification because it does not produce water as a byproduct, making the reaction atom-economical."
+    },
+    "alkene-halogen": {
+      "name": "Alkene Halogenation",
+      "formula": "R-CH=CH₂ + X₂ → R-CHX-CH₂X",
+      "info": "The reaction between an alkene and a halogen (Cl or Br) is an electrophilic addition reaction. It is a fundamental way to synthesize vicinal dihalides (compounds where two halogen atoms are attached to adjacent carbons).",
+      "fact": "Unlike alkanes, alkenes do not require UV light for this reaction; it happens readily at room temperature because the pi bond is electron-rich and easily attacked."
+    },
+    "alkene-reduction": {
+      "name": "Alkene Reduction",
+      "formula": "R-CH=CH-R' + H₂ → R-CH₂-CH₂-R'",
+      "info": "Alkene reduction, commonly known as catalytic hydrogenation, is the process of adding hydrogen (H₂) across a carbon-carbon double bond to form an alkane. This reaction is essential in both laboratory synthesis and industrial processes, such as the production of margarine from vegetable oils.",
+      "fact": "This reaction is used in the food industry to make margarine."
+    },
+    "alkyne-halogen": {
+      "name": "Alkyne Halogenation",
+      "formula": "R-C≡CH + X₂ → R-CX₂-CHX₂",
+      "info": "Alkyne halogenation is an electrophilic addition reaction where halogens (Cl₂ or Br₂) add across the triple bond. Because an alkyne has two pi bonds, the reaction can occur in two stages: first forming a dihaloalkene and then a tetrahaloalkane.",
+      "fact": "Terminal alkynes can be distinguished from internal ones."
+    },
+    "alkyne-oxidation": {
+      "name": "Alkyne Hydration",
+      "formula": "R-C≡CH + H₂O → R-CO-CH₃",
+      "info": "The oxidation of alkynes involves breaking the carbon-carbon triple bond to form oxygen-containing functional groups. The outcome of the reaction depends heavily on whether you are using mild or strong oxidizing agents.",
+      "fact": "This follows Markovnikov's rule."
+    },
+    "acyl_cl-amine": {
+      "name": "Amide Formation",
+      "formula": "R-NH₂ + R'-COCl → R'-CONHR + HCl",
+      "info": "The reaction between an amine and an acyl chloride is a rapid and vigorous process that forms an amide. This is a type of nucleophilic acyl substitution and is one of the most efficient ways to synthesize amides in the laboratory.",
+      "fact": "This reaction is used in peptide synthesis."
+    },
+    "amine-carboxylic_acid": {
+      "name": "Ammonium Salt Formation",
+      "formula": "R-COOH + R'-NH₂ → R-COO⁻ ⁺NH₃R'",
+      "info": "The reaction between an acyl chloride and a carboxylic acid is a common method used to synthesize acid anhydrides. This is a nucleophilic acyl substitution reaction where the carboxylic acid acts as the nucleophile.",
+      "fact": "This is the first step in amide formation."
+    },
+    "benzene-halogen": {
+      "name": "Benzene Halogenation",
+      "formula": "C₆H₆ + X₂ → C₆H₅X + HX",
+      "info": "Benzene halogenation is an electrophilic aromatic substitution (EAS) reaction. Unlike alkenes, benzene does not react with halogens under normal conditions because its delocalized pi system is exceptionally stable. To overcome this stability, a Lewis acid catalyst is required to generate a stronger electrophile.",
+      "fact": "Benzene reacts with halogens using FeX₃ catalyst"
+    },
+    "benzene-nitro": {
+      "name": "Benzene Nitration",
+      "formula": "C₆H₆ + HNO₃ → C₆H₅NO₂ + H₂O",
+      "info": "Benzene nitration is a classic example of electrophilic aromatic substitution (EAS). In this reaction, a nitro group (NO₂) replaces a hydrogen atom on the benzene ring. Because the benzene ring is so stable due to its aromaticity, it requires a very powerful electrophile—the nitronium ion (NO²+) to react.",
+      "fact": "Nitration is the first step in making explosives like TNT."
+    },
+    "carboxylic_acid-reduction": {
+      "name": "Carboxylic Acid Reduction",
+      "formula": "R-COOH + LiAlH₄ → R-CH₂OH",
+      "info": "The reduction of a carboxylic acid is a process that decreases the oxidation state of the carbonyl carbon, typically converting the acid into a primary alcohol. This is a relatively difficult transformation because the carboxylic acid group is resistant to many common reducing agents.",
+      "fact": "This reagent is powerful and reacts violently with water."
+    },
+    "nitro-reduction": {
+      "name": "Nitro Reduction",
+      "formula": "R-NO₂ + Sn/HCl → R-NH₂",
+      "info": "The reduction of nitro compounds—most commonly nitrobenzene—is a vital reaction in organic chemistry used to synthesize primary amines (like aniline). This transformation can be achieved through several different methods depending on the desired scale and the presence of other functional groups in the molecule.",
+      "fact": "This method is very clean as the only byproduct is water, and the catalyst can be filtered off and reused/"
+    },
+    "halogen-phenol": {
+      "name": "Phenol Halogenation",
+      "formula": "C₆H₅OH + 3X₂ → C₆H₂X₃OH + 3HX",
+      "info": "The halogenation of phenol is significantly faster and easier than the halogenation of benzene. This is because the hydroxyl group (OH) is a powerful activating group. The lone pair of electrons on the oxygen atom is delocalized into the benzene ring, greatly increasing the electron density and making the ring highly nucleophilic.",
+      "fact": "This is a characteristic test for phenols."
+    },
+    "halogen-sulfur": {
+      "name": "Sulfur Dioxide Chlorination",
+      "formula": "SO₂ + Cl₂ → SO₂Cl₂",
+      "info": "The reaction between sulfur dioxide (SO₂) and halogens (X₂) is a significant chemical process used to produce sulfur-halogen compounds or to facilitate redox reactions. The outcome depends on whether the reaction occurs in the gas phase or in the presence of water.",
+      "fact": "This compound is used as a chlorinating agent."
+    },
+    "oxidation-sulfur": {
+      "name": "Sulfur Dioxide Oxidation",
+      "formula": "SO₂ + V₂O₅ → SO₃",
+      "info": "The oxidation of sulfur dioxide (SO₂) involves the conversion of sulfur from the +4 oxidation state to the +6 oxidation state, primarily forming sulfur trioxide (SO₃). This reaction is the cornerstone of the industrial production of sulfuric acid and a key factor in environmental chemistry.",
+      "fact": "This is the contact process for sulfuric acid production."
+    },
+    "oxidation-reduction": {
+      "name": "Water Formation",
+      "formula": "2H₂ + O₂ → 2H₂O",
+      "info": "The formation of water from its constituent elements—hydrogen and oxygen—is one of the most fundamental reactions in chemistry. While the reaction is conceptually simple, it is highly energetic and involves a complex chain mechanism.",
+      "fact": "The reaction is highly exothermic, meaning it releases a significant amount of energy in the form of heat and light."
+    },
+    "amine-halogen": {
+      "name": "Amine Halogenation",
+      "formula": "R-NH₂ + X₂ → R-NX + HX",
+      "info": "The reaction between amines and halogens (like Cl₂, Br₂, I₂) is a process that replaces the hydrogen atoms on the nitrogen with halogen atoms. This produces a class of compounds known as N-haloamines.",
+      "fact": "If the reaction is not controlled, the HX produced can protonate the starting amine, making it unreactive. This is why a base is often added to neutralize the acid."
+    },
+    "alkene-benzene": {
+      "name": "Friedel-Crafts Alkylation",
+      "formula": "C₆H₆ + R-CH=CH₂ → C₆H₅-CH(R)-CH₃",
+      "info": "The reaction between an alkene and benzene is a classic example of Friedel-Crafts Alkylation. While Friedel-Crafts reactions traditionally use alkyl halides, using an alkene is a more 'atom-economical' industrial method because it doesn't produce a halogen acid byproduct like HCl",
+      "fact": "The most famous industrial use of this reaction is the synthesis of ethylbenzene."
+    },
+    "amine-oxidation": {
+      "name": "Amine Oxidation",
+      "formula": "R-NH₂ + [O]₂ → R-NO₂",
+      "info": "The oxidation of amines is a complex area of chemistry because the outcome varies significantly depending on the class of the amine (primary, secondary, or tertiary) and the oxidizing agent used. Unlike many other functional groups, amines can be oxidized at the nitrogen atom, the adjacent carbon, or both.",
+      "fact": "In biological systems, specifically in the liver, amines (from amino acids) undergo oxidative deamination."
+    },
+    "alkyne-benzene": {
+      "name": "Friedel-Crafts Alkylation",
+      "formula": "C₆H₆ + R-C≡C-H → C₆H₅-C(R)=CH₂",
+      "info": "When benzene reacts with an alkyne in the presence of a strong Lewis acid catalyst (like AlCl₃), the reaction can occur once to form an alkenylbenzene (a styrene derivative) or twice to form a diarylakane.",
+      "fact": "If excess benzene is used, the reaction often continues because the intermediate alkene is more reactive than the starting alkyne."
+    },
+    "benzene-oxidation": {
+      "name": "Benzene Oxidation",
+      "formula": "2C₆H₆ + 9O₂ → 2C₄H₂O₃ + 4H₂O + 4CO₂",
+      "info": "The oxidation of benzene is quite different from the oxidation of alkanes or alkenes. Because of its aromatic stability (resonance energy), the benzene ring is exceptionally resistant to common oxidizing agents like potassium permanganate (KMnO₄) or potassium dichromate (K₂Cr₂O₇), which would typically react with double bonds.However, under extreme conditions or using specific catalysts, benzene can be oxidized.",
+      "fact": "Maleic anhydride is used extensively in the production of polyester resins, alkyd resins, and agricultural chemicals."
+    },
+    "benzene-reduction": {
+      "name": "Cyclohexane Formation",
+      "formula": "C₆H₆ + 3H₂ → C₆H₁₂",
+      "info": "The reduction of benzene is the process of adding hydrogen atoms to the aromatic ring to saturate the double bonds. Because benzene is exceptionally stable due to its resonance energy, this reaction is more difficult to perform than the reduction of simple alkenes.",
+      "fact": "Cyclohexane, a colorless liquid used as a solvent and as a precursor for making Nylon."
+    },
+    "alkene-phenol": {
+      "name": "Friedel-Crafts Alkylation",
+      "formula": "C₆H₅OH + R-CH=CH₂ → HOC₆H₄-CH(R)CH₃",
+      "info": "The reaction between phenol and an alkene is a specialized form of Friedel-Crafts Alkylation. Because the hydroxyl group (OH) is a very powerful activating group, phenol is much more reactive than benzene. This allows the reaction to occur under milder conditions, though it is often more complex due to the potential for reaction at both the oxygen and the carbon ring.",
+      "fact": "In the presence of an acid catalyst, the alkene is protonated to form a carbocation, which then acts as an electrophile."
+    },
+    "acyl_cl-alkene": {
+      "name": "Kondakov Reaction",
+      "formula": "R-COCl + R'CH=CH₂ → RCOCH₂CH(Cl)R'",
+      "info": "The reaction between an acyl chloride and an alkene is a variation of the Friedel-Crafts reaction, often referred to as the Kondakov reaction or aliphatic acylation. It is used to synthesize β-halo ketones or α,β-unsaturated ketones.",
+      "fact": "Unlike the acylation of benzene, which is very common, the acylation of alkenes requires careful control to prevent the polymerisation of the alkene."
+    },
+    "alkene-oxidation": {
+      "name": "Epoxidation (Formation of Oxiranes)",
+      "formula": "R-CH=CH-R + R'CO₃H → R-CH(O)CH-R + R'COOH",
+      "info": "The oxidation of alkenes is a versatile area of organic chemistry because the product depends entirely on the strength of the oxidizing agent and the specific reaction conditions. These reactions typically involve the addition of oxygen across the double bond or the complete cleavage of the bond.",
+      "fact": "An alkene can react with a peroxy acid (like mCPBA) to form a three-membered cyclic ether called an epoxide or oxirane."
+    },
+    "alkane-oxidation": {
+      "name": "Combustion",
+      "formula": "CH₄ + 2O₂ → CO₂ + 2H₂O",
+      "info": "The oxidation of alkanes is the process by which they react with oxygen or oxidizing agents. Because alkanes are saturated hydrocarbons with strong C-H and C-C bonds, they are generally quite unreactive (hence their old name, paraffins, from the Latin parum affinis meaning 'little affinity').",
+      "fact": "This reaction is highly exothermic, which is why alkanes are the primary components of fuels like natural gas, gasoline, and diesel."
+    },
+    "alkane-nitro": {
+      "name": "Nitration of Alkane",
+      "formula": "RH + HNO₃ → R-NO₂ + H₂O",
+      "info": "The nitration of alkanes is the process of replacing a hydrogen atom with a nitro group (NO₂). Unlike aromatic nitration (which is very common), alkane nitration is more difficult because alkanes are saturated and lack the electron-rich system of benzene.",
+      "fact": "Alkane nitration is typically carried out in the vapor phase at high temperatures (400°C to 500°C). In these conditions, the alkane reacts with nitric acid (HNO₃) vapors."
+    },
+    "acyl_cl-alkane": {
+      "name": "Acylation of Alkane",
+      "formula": "R-COCl + R'-H → R-CO-R' + HCl",
+      "info": "The reaction between an acyl chloride (acid chloride) and an alkane is relatively rare compared to other acylation reactions. This is because alkanes are saturated hydrocarbons with very strong C-H bonds and no pi electrons to attack an electrophile.",
+      "fact": "In the presence of a powerful catalyst like Aluminum Chloride (AlCl₃), an acyl chloride can react with an alkane to produce a ketone."
+    },
+    "alcohol-alkyne": {
+      "name": "Alkoxylation",
+      "formula": "R-C≡C-H + R'OH → R-CH=C(OR')H",
+      "info": "The reaction between an alcohol and an alkyne is a nucleophilic addition reaction, often referred to as alkoxylation. Because alkynes are unsaturated, alcohols can add across the triple bond to form vinyl ethers or acetals.",
+      "fact": "In the presence of a strong base (like KOH or sodium alkoxide), an alcohol adds to an alkyne to form a vinyl ether."
+    },
+    "alkyne-phenol": {
+      "name": "Amine Oxidation",
+      "formula": "R-C≡C-H + C₆H₅OH → C₆H₆-O-C(R)=CH₂",
+      "info": "The reaction between phenol and an alkyne is a specific type of nucleophilic addition known as vinylation. Because phenol has a nucleophilic hydroxyl group (OH), it can add across the triple bond of an alkyne to form aryl vinyl ethers. In the presence of a strong base such as potassium hydroxide (KOH) or an alkali metal phenoxide, phenol reacts with an alkyne (often acetylene) to produce a vinyl ether.",
+      "fact": "The base deprotonates the phenol to form a phenoxide ion (C₆H₅O-)."
+    },
+    "alkyne-amine": {
+      "name": "Hydroamination",
+      "formula": "R-C≡C-H + R'NH₂ → R-CH=C(NHR')H ⇌ R-CH₂-C(=NR')H",
+      "info": "The reaction between an alkyne and an amine is a nucleophilic addition reaction known as hydroamination. This process involves the addition of an N-H bond across a ≡ triple bond to form enamines or imines. When a primary or secondary amine reacts with an alkyne, the nitrogen atom attaches to one carbon of the triple bond, and the hydrogen atom attaches to the other.",
+      "fact": "When the amine group and the alkyne group are on the same molecule, the reaction leads to the formation of nitrogen-containing heterocycles, such as pyrroles or piperidines."
+    },
+    "alkyne-carboxylic_acid": {
+      "name": "Vinyl Ester Production",
+      "formula": "R-C≡C-H + R'COOH → R-C(OOCR')=CH₂",
+      "info": "The reaction between an alkyne and a carboxylic acid is an addition reaction that typically produces vinyl esters. Because carboxylic acids are relatively weak nucleophiles, this reaction usually requires a catalyst—either a strong acid or, more commonly, a transition metal catalyst like Mercury (Hg), Gold (Au), or Ruthenium (Ru).",
+      "fact": " The reaction generally follows Markovnikov's Rule, where the carboxylate group (R'COO-) attaches to the more substituted carbon of the alkyne."
+    },
+    "acyl_cl-alkyne": {
+      "name": "Electrophilic Addition",
+      "formula": "R-C≡C-H + R'COCl → R-C(Cl)=CH-COR'",
+      "info": "The reaction between an alkyne and an acyl chloride is an electrophilic addition reaction. Similar to the acylation of alkenes, this process is used to synthesize β-halo-enones or α,β-unsaturated ketones. Because alkynes have a higher degree of unsaturation, the reaction can be controlled to stop after a single addition, providing a functionalized alkene as the product.",
+      "fact": "In the presence of a Lewis acid catalyst, the acyl group (RCO-) and a chlorine atom add across the triple bond."
+    },
+    "alkyne-reduction": {
+      "name": "Complete Reduction to Alkanes",
+      "formula": "R-C≡C-H + 2H₂ → R-CH₂-CH₂-R'",
+      "info": "If an alkyne is treated with hydrogen gas in the presence of a standard metal catalyst, it will be fully reduced to an alkane. It is very difficult to stop this reaction at the alkene stage using these catalysts because alkenes are generally more reactive toward hydrogenation than alkynes.",
+      "fact": "Hydrogenation works normally to produce 1-alkenes or alkanes."
+    },
+    "alcohol-halogen": {
+      "name": "Oxidation by Halogen",
+      "formula": "R-CH₂OH + X₂ → R-CHO + 2HX",
+      "info": "Halogens, particularly Chlorine (Cl₂) and Bromine (Br₂), act as oxidizing agents toward alcohols. This reaction typically occurs in the presence of water or under alkaline conditions.",
+      "fact": "Secondary Alcohols are oxidized to ketones.Tertiary Alcohols: Are generally resistant to oxidation by halogens because they lack a hydrogen atom on the carbinol carbon (the carbon attached to the -OH group)."
+    },
+    "carboxylic_acid-halogen": {
+      "name": "Hell-Volhard-Zelinsky (HVK) Reaction",
+      "formula": "R-CH₂-COOH + X₂/Red P + H₂O → R-CH(X)-COOH + HX",
+      "info": " The Red Phosphorus reacts with the halogen to form PX₃, which converts a small amount of the acid into an acid halide. The acid halide exists in equilibrium with its enol form, which is then halogenated at the α-position. Finally, the halogenated acid halide reacts with more carboxylic acid to regenerate the catalyst and produce the final product.",
+      "fact": "The product formed is an α-halo carboxyllic acid"
+    },
+    "ether-halogen": {
+      "name": "Halogenation",
+      "formula": "CH₃CH₂-O-CH₂CH₃ + Cl₂ → CH₃CH(Cl)-O-CH(Cl)CH₃ + 2HCl",
+      "info": "The reaction between halogens and ethers typically involves the substitution of hydrogen atoms on the carbon chains. Ethers are generally quite stable, but in the presence of light or heat, they can be halogenated via a free-radical mechanism.",
+      "fact": "In the absence of light, the reaction is slow and typically only replaces the hydrogen atoms on the α-carbons (the carbons directly attached to the oxygen atom)."
+    },
+    "acyl_cl-halogen": {
+      "name": "Alpha-Halogenation of Acyl Chloride",
+      "formula": "R-CH₂-COCl + X₂ → R-CH(X)-COCl + HX",
+      "info": "Acyl chlorides are more reactive than carboxylic acids toward α-halogenation because they exist in a more significant equilibrium with their enol form.",
+      "fact": "The product formed is an α-halo acyl chloride."
+    },
+    "halogen-oxidation": {
+      "name": "Oxidation of Halogen",
+      "formula": "Cl₂ + 2NaOH → NaCl + NaClO + H₂O",
+      "info": "When halogens react with water or alkalis, they often undergo disproportionation—a reaction where the same element is simultaneously oxidized and reduced.",
+      "fact": "Except for Fluorine, halogens can exist in positive oxidation states (+1, +3, +5, +7) when combined with more electronegative elements like Oxygen or Fluorine."
+    },
+    "halogen-reduction": {
+      "name": "Hydrogenation of Halogen",
+      "formula": "H₂(g) + X₂(g) → 2HX(g)",
+      "info": "The hydrogenation of halogens is a fundamental redox reaction where a halogen molecule (X₂) reacts with hydrogen gas (H₂) to form a hydrogen halide (HX).",
+      "fact": "The reaction is a direct combination (synthesis) reaction"
+    },
+    "oxidation-phenol": {
+      "name": "Air Oxidation",
+      "formula": "C₆H₅OH + Na₂Cr₂O₇/H₂SO₄ → O=C₆H₄=O",
+      "info": "The oxidation of phenol is more complex than that of simple aliphatic alcohols. Because the hydroxyl group is attached to an aromatic ring, the reaction often affects the ring itself rather than just the oxygen atom.",
+      "fact": "Pure phenol is a colorless crystalline solid, but it often turns pink or reddish-brown over time."
+    },
+    "alcohol-reduction": {
+      "name": "Reduction to Alkanes",
+      "formula": "R-OH + 2HI → R-H + I₂ + H₂O",
+      "info": "The most direct way to reduce an alcohol to an alkane involves using Hydroiodic Acid (HI) in the presence of Red Phosphorus. This is a powerful reducing system capable of stripping oxygen from many functional groups.",
+      "fact": "This is often used in the reduction of complex sugars or polyols to their corresponding hydrocarbons."
+    },
+    "phenol-reduction": {
+      "name": "Deoxygenation",
+      "formula": "C₆H₅OH + Zn dust → C₆H₆ + ZnO(g)",
+      "info": "This is the most common laboratory method for removing the hydroxyl group from phenol. It involves heating phenol with Zinc dust.",
+      "fact": "This is a surface reaction where the Zinc acts as a reducing agent, stripping the oxygen from the phenol."
+    },
+    "carboxylic_acid-phenol": {
+      "name": "Fishcher Esterification",
+      "formula": "C₆H₅OH + RCOOH → RCOOC₆H₅ + H₂O",
+      "info": "The reaction between phenol and carboxylic acids is a bit unique because phenols are less nucleophilic than simple aliphatic alcohols. Consequently, a direct reaction to form an ester (esterification) is often slow or requires specific conditions and catalysts.",
+      "fact": "The Product formed is an Aryl Ester (Phenyl Alkanoate)"
+    },
+    "nitro-phenol": {
+      "name": "Phenol Nitration",
+      "formula": "C₆H₅OH + dil. HNO₃ → o-nitrophenol + p-nitrophenol",
+      "info": "When phenol reacts with dilute HNO₃ at a low temperature (room temperature, approximately 298 K), it produces a mixture of ortho and para nitrophenols.",
+      "fact": "The ortho isomer is typically formed in higher amounts but can be separated from the para isomer via steam distillation."
+    },
+    "reduction-sulfur": {
+      "name": "Reduction of Sulfuric Acid",
+      "formula": "2H₂SO₄ + Cu → CuSO₄ + SO₂ + 2H₂O",
+      "info": "Concentrated sulfuric acid is a strong oxidizing agent and is easily reduced by various substances, especially halides and metals.",
+      "fact": "Iodide is a stronger reducing agent and can reduce it all the way to hydrogen sulfide (H₂S)"
+    },
+    "benzene-sulfur": {
+      "name": "Benzene Sulphonation",
+      "formula": "C₆H₆ + H₂SO₄ → C₆H₅SO₃ + H₂O",
+      "info": "Benzene reacts with fuming sulphuric acid (oleum) or concentrated sulphuric acid at elevated temperatures to produce benzene sulphonic acid.",
+      "fact": "The actual electrophile is Sulfur Trioxide SO₃. Even in concentrated sulphuric acid, SO₃ is produced through the equilibrium"
+    },
+    "amine-sulfur": {
+      "name": "Amine Sulphonation",
+      "formula": "C₆H₅NH₂ + H₂SO₄ → C₆H₅NH₃+HSO₄-",
+      "info": "The sulphonation of amines is a significant reaction in organic chemistry, primarily used to produce sulphonamides, which are the basis for a large class of antibiotics (sulfa drugs).",
+      "fact": "Aniline reacts with concentrated H₂SO₄ to form anilinium hydrogen sulphate."
+    },
+    "ether-oxidation": {
+      "name": "Peroxide Formation",
+      "formula": "CH₃CH₂-O-CH₂CH₃ + O₂ → CH₃CH(OOH)-O-CH₂CH₃",
+      "info": "When ethers are exposed to air (oxygen) and light over long periods, they slowly react with oxygen to form hydroperoxides and dialkyl peroxides. This is a free-radical chain reaction",
+      "fact": "Laboratories ether bottles are often tested for peroxides before use, beacause they are highly explosive and can detonate if the ether is distilled to dryness or heated."
+    },
+    "acyl_cl-oxidation": {
+      "name": "Hydration",
+      "formula": "RCOCl + H₂O → RCOOH + HCl",
+      "info": "Acyl chlorides are generally resistant to common oxidizing agents like Potassium Permanganate (KMnO₄) or Potassium Dichromate (K₂Cr₂O₇) in anhydrous conditions. However, if water is present (which is common in many oxidation reactions), the acyl chloride will first undergo hydrolysis to form a carboxylic acid.",
+      "fact": "Any further oxidation would then act upon the resulting carboxylic acid (e.g., oxidizing a side chain)."
+    },
+    "acyl_cl-reduction": {
+      "name": "Reduction to Primary Acid",
+      "formula": "RCOCl + LiAlH₄/ether → RCH₂OH",
+      "info": "The first hydride displaces the chloride ion to form an aldehyde. Because the aldehyde is more reactive than the starting acyl chloride, a second hydride immediately attacks to form a primary alcohol.",
+      "fact": "If you want to fully reduce the carbonyl group, strong hydride donors are used."
+    },
+    "aldehyde-halogen": {
+      "name": "Alpha-Halogenation",
+      "formula": "RCH₂CHO + X₂ → RCH(X)CHO + HX",
+      "info": "The reaction involves the substitution of an alpha-hydrogen atom with a halogen atom under acidic conditions.",
+      "fact": "The acid catalyst promotes enolization, which is the rate-determining step for the halogenation."
+    },
+    "alcohol-aldehyde": {
+      "name": "Acetal Formation",
+      "formula": "RCHO + 2R'OH → RCH(OR')₂ + H₂O",
+      "info": "Aldehydes react with alcohols in the presence of an acid catalyst to form geminal diether derivatives known as acetals.",
+      "fact": "This is a reversible nucleophilic addition-elimination mechanism often used to protect carbonyl groups."
+    },
+    "aldehyde-phenol": {
+     "name": "Phenol-Aldehyde Condensation",
+     "formula": "RCHO + C₆H₅OH → HOC₆H₄CH(R)OH",
+     "info": "The aldehyde undergoes electrophilic aromatic substitution with phenol to yield hydroxyalkylated derivatives.",
+     "fact": "This reaction is the fundamental step in the synthesis of phenolic resins like Bakelite."
+  },
+    "aldehyde-carboxylic_acid": {
+    "name": "Perkin Reaction",
+    "formula": "RCHO + R'CH₂COOH → RCH=C(R')COOH + H₂O",
+    "info": "The condensation of an aldehyde with an acid anhydride (or carboxylic acid salt) to produce an alpha,beta-unsaturated carboxylic acid.",
+    "fact": "Sodium acetate acts as a base to generate an enolate from the carboxylic acid derivative."
+  },
+    "aldehyde-nitro": {
+    "name": "Nitroalkane Condensation (Henry Reaction)",
+    "formula": "RCHO + R'CH₂NO₂ → RCH=C(R')NO₂ + H₂O",
+    "info": "A base-catalyzed C-C bond-forming reaction between an aldehyde and a nitroalkane containing alpha-hydrogens.",
+    "fact": "The resulting nitroalkene is a versatile intermediate for further reduction or nucleophilic addition."
+  },
+     "aldehyde-sulfur": {
+    "name": "Thioacetal Formation",
+    "formula": "RCHO + H₂S → RCH(SH)₂",
+    "info": "Aldehydes react with hydrogen sulfide to form sulfur analogs of hemiacetals or dithioacetals.",
+    "fact": "Thioacetals are significantly more stable toward acid hydrolysis compared to oxygen-based acetals."
+  },
+    "aldehyde-amine": {
+    "name": "Imine Formation (Schiff Base)",
+    "formula": "RCHO + R'NH₂ → RCH=NR' + H₂O",
+    "info": "Primary amines react with aldehydes via nucleophilic addition followed by dehydration to form imines.",
+    "fact": "Optimal reaction rates are typically achieved at a pH of approximately 4.5."
+  }, 
+  "aldehyde-alkyne": {
+    "name": "Nucleophilic Addition of Alkynides",
+    "formula": "RCHO + R'C≡C-Na+ → RCH(OH)C≡CR'",
+    "info": "The nucleophilic attack of an alkynyl anion on the electrophilic carbonyl carbon followed by protonation yields a secondary propargylic alcohol.",
+    "fact": "The alkynide ion is a strong nucleophile generated by the deprotonation of a terminal alkyne."
+  },
+  "aldehyde-reduction": {
+    "name": "Sodium Borohydride Reduction",
+    "formula": "RCHO + NaBH₄ → RCH₂OH",
+    "info": "The addition of hydrogen across the C=O double bond reduces the oxidation state of the carbonyl carbon, yielding a primary alcohol.",
+     "fact": "Sodium borohydride is a selective reducing agent that does not typically reduce carboxylic acids or esters."
+  },
+  "aldehyde-ketone": {
+    "name": "Claisen-Schmidt Condensation",
+    "formula": "RCHO + R'COCH₃→ RCH=CHCOR' + H₂O",
+    "info": "A crossed aldol condensation between an aldehyde and a ketone to produce an alpha,beta-unsaturated ketone.",
+    "fact": "Aldehydes without alpha-hydrogens are often used to ensure the reaction proceeds toward a single product."
+  },
+   "aldehyde-nitrile": {
+    "name": "Cyanohydrin Formation",
+    "formula": "RCHO + HCN → RCH(OH)CN",
+    "info": "Nucleophilic addition of a cyanide ion to the carbonyl carbon followed by protonation of the oxygen.",
+    "fact": "The addition of a small amount of base or cyanide salt is necessary to generate sufficient CN- nucleophiles."
+  },
+  "aldehyde-amide": {
+    "name": "Bis-amide Formation",
+    "formula": "RCHO + R'CONH₂ → RCH(NHCOR')₂",
+    "info": "Aldehydes react with primary amides to form gem-bis-amides through a condensation process.",
+    "fact": "This reaction is often catalyzed by Lewis acids or strong mineral acids."
+  },
+  "aldehyde-ester": {
+    "name": "Claisen-Ester Condensation",
+    "formula": "RCHO + R'CH₂COOR'' → RCH=C(R')COOR'' + H₂O",
+    "info": "The base-promoted condensation of an aldehyde with an ester containing alpha-hydrogens.",
+    "fact": "The alkoxide base used should match the ester's alkoxy group to prevent transesterification side reactions."
+  },
+  "aldehyde-oxidation": {
+    "name": "General Oxidation",
+    "formula": "RCHO + KMnO4 → RCOOH",
+    "info": "The aldehyde is converted into a carboxylic acid through the insertion of oxygen into the C-H bond of the carbonyl group.",
+    "fact": "This reaction is so favorable that aldehydes can even be oxidized by atmospheric oxygen over time, a process known as autoxidation."
+  },
+   "halogen-ketone": {
+    "name": "Alpha-Halogenation of Ketones",
+    "formula": "RCH₂COR' + X₂ → RCH(X)COR' + HX",
+    "info": "The substitution of an alpha-hydrogen with a halogen atom in a ketone, catalyzed by acid.",
+    "fact": "In acidic conditions, the reaction typically stops after mono-substitution, unlike base-catalyzed halogenation."
+  },
+  "alcohol-ketone": {
+    "name": "Ketal Formation",
+    "formula": "RCOR' + 2R''OH → RC(OR'')₂R' + H₂O",
+    "info": "Ketones react with alcohols in the presence of an acid catalyst to form ketals.",
+    "fact": "Ketal formation is generally more sterically hindered and thermodynamically less favorable than acetal formation from aldehydes."
+  },
+  "ketone-phenol": {
+    "name": "Synthesis of Bisphenols",
+    "formula": "CH₃COCH₃ + 2C₆H₅OH → HOC₆H₄C(CH₃)₂C₆H₄OH + H₂O",
+    "info": "The acid-catalyzed condensation of a ketone (specifically acetone) with two equivalents of phenol.",
+    "fact": "This specific reaction between acetone and phenol produces Bisphenol A (BPA), a primary precursor for polycarbonates."
+  },
+  "ketone-nitro": {
+    "name": "Henry Reaction (Nitroaldol Condensation)",
+    "formula": "RCOR' + R''CH₂NO₂ → RR'C=C(R'')NO₂ + H₂O",
+    "info": "A base-catalyzed condensation between a ketone and a nitroalkane to form a nitroalkene.",
+    "fact": "Ketones are less reactive than aldehydes in this reaction due to steric hindrance and the inductive effect of the second alkyl group."
+  },
+  "ketone-sulfur": {
+    "name": "Thioketal Formation",
+    "formula": "RCOR' + H₂S → RC(SH)₂R'",
+    "info": "The reaction of a ketone with hydrogen sulfide to form a sulfur-containing analog of a ketal.",
+    "fact": "Thioketals are often used as intermediates in the Mozingo reduction to convert a carbonyl group into a methylene group."
+  },
+"amine-ketone": {
+    "name": "Imine Formation (Schiff Base)",
+    "formula": "RCOR' + R''NH₂ → RR'C=NR'' + H₂O",
+    "info": "The nucleophilic addition of a primary amine to a ketone followed by the elimination of water.",
+    "fact": "Imines derived from ketones are often called keto-imines and are generally less stable than those derived from aldehydes."
+  },
+  "alkyne-ketone": {
+    "name": "Nucleophilic Addition of Alkynides",
+    "formula": "RCOR' + R''C≡C-Na+ → RR'C(OH)C≡CR''",
+    "info": "The addition of a metal acetylide to a ketone to form a tertiary propargylic alcohol.",
+    "fact": "This is a powerful method for extending the carbon chain while maintaining functional handle versatility."
+  },
+"ketone-oxidation": {
+    "name": "Vigorous Oxidation of Ketones",
+    "formula": "RCH₂COCH₂R' (KMnO4, Δ) → RCOOH + R'CH₂COOH",
+    "info": "Unlike aldehydes, ketones require strong oxidizing agents and heat to undergo C-C bond cleavage.",
+    "fact": "The cleavage occurs on both sides of the carbonyl group, often resulting in a complex mixture of carboxylic acids."
+  },
+  "ketone-reduction": {
+    "name": "Sodium Borohydride Reduction",
+    "formula": "RCOR' (NaBH₄) → RCH(OH)R'",
+    "info": "The reduction of a ketone to a secondary alcohol using a hydride source.",
+    "fact": "NaBH₄ is a chemoselective reagent that reduces ketones and aldehydes but leaves esters and amides intact."
+  },
+  "ketone-aldehyde": {
+    "name": "Crossed Aldol Condensation",
+    "formula": "RCOR' + R''CHO  → R''CH=CHCOR + H₂O",
+    "info": "The reaction between a ketone enolate and an aldehyde to form an alpha,beta-unsaturated ketone.",
+    "fact": "The ketone usually acts as the nucleophile (enolate) while the aldehyde acts as the electrophile due to its higher reactivity."
+},
+"ketone-nitrile": {
+    "name": "Cyanohydrin Formation",
+    "formula": "RCOR' + HCN → RR'C(OH)CN",
+    "info": "The nucleophilic addition of a cyanide ion to a ketone to form a cyanohydrin.",
+    "fact": "The reaction is reversible and the equilibrium position is influenced by the steric bulk of the R and R' groups."
+  },
+  "ester-ketone": {
+    "name": "Claisen-Schmidt Ester Condensation",
+    "formula": "RCOR' + R''CH₂COOR''' → RR'C=C(R'')COOR''' + H₂O",
+    "info": "The condensation of a ketone with an ester in the presence of an alkoxide base to form a 1,3-diketone.",
+    "fact": "This reaction is useful for synthesizing substituted unsaturated esters from simple ketone and ester precursors."
+  },
+  "ester-halogen": {
+    "name": "Hell-Volhard-Zelinsky Alpha-Halogenation",
+    "formula": "RCH₂COOR' + X₂ → RCH(X)COOR' + HX",
+    "info": "The substitution of an alpha-hydrogen with a halogen atom, typically facilitated by red phosphorus or phosphorus trihalides.",
+    "fact": "This reaction is highly specific for the alpha-position and is a critical step in synthesizing alpha-halo acids and esters."
+  },
+  "alcohol-ester": {
+    "name": "Transesterification",
+    "formula": "RCOOR' + R''OH → RCOOR'' + R'OH",
+    "info": "An organic reaction where the alkoxy group of an ester is substituted by another alcohol group under acidic catalysis.",
+    "fact": "This is an equilibrium process; an excess of the reactant alcohol is typically used to drive the reaction toward the new ester."
+  },
+  "ester-phenol": {
+    "name": "Phenolysis of Esters",
+    "formula": "RCOOR' + C₆H₅OH (Δ) → RCOOC₆H₅ + R'OH",
+    "info": "The thermal reaction between an ester and phenol to produce a phenyl ester and a byproduct alcohol.",
+    "fact": "Phenyl esters are more reactive toward nucleophiles than simple alkyl esters due to the resonance stabilization of the phenoxide leaving group."
+  },
+  "carboxylic_acid-ester": {
+    "name": "Acid-Catalyzed Ester-Acid Exchange",
+    "formula": "RCOOR' + R''COOH → RCOOR'' + RCOOH",
+    "info": "The redistribution of acyl and alkoxyh groups between an ester and a carboxylic acid.",
+    "fact": "This reaction is less common than transesterification but follows a similar nucleophilic acyl substitution mechanism."
+  },
+  "amine-ester": {
+    "name": "Aminolysis of Esters",
+    "formula": "RCOOR' + R''NH₂ → RCONHR'' + R'OH",
+    "info": "The nucleophilic attack of a primary or secondary amine on the ester carbonyl to form an amide.",
+    "fact": "Aminolysis is generally faster than hydrolysis because amines are stronger nucleophiles than water or alcohols."
+  },
+  "alkyne-ester": {
+    "name": "Acylation of Alkynides",
+    "formula": "RCOOR' + R''C≡C-Na+ → RCOC≡CR'' + R'ONa",
+    "info": "The reaction of an ester with a metal acetylide to yield an alpha,beta-acetylenic ketone (alkynone).",
+    "fact": "This is a direct method for introducing an alkynyl group into a carbonyl-containing framework."
+  },
+  "ester-reduction": {
+    "name": "Lithium Aluminum Hydride Reduction",
+    "formula": "RCOOR' (LiAlH₄) → RCH₂OH + R'OH",
+    "info": "The complete reduction of an ester into two separate alcohols using a strong hydride reducing agent.",
+    "fact": "LiAlH4 is required for this transformation as milder reagents like NaBH4 are typically unable to reduce esters."
+  },
+  "ester-aldehyde": {
+    "name": "Claisen-Schmidt Ester-Aldehyde Condensation",
+    "formula": "RCOOR' + R''CH₂CHO (OR-) → R''CH(CHO)COR + R'OH",
+    "info": "A base-catalyzed crossed condensation where an aldehyde enolate attacks the carbonyl group of an ester.",
+    "fact": "This reaction allows for the synthesis of 1,3-dicarbonyl compounds containing both aldehyde and ketone functionalities."
+  },
+   "amide-ester": {
+    "name": "N-Acylation of Amides",
+    "formula": "RCOOR' + R''CONH₂ → RCONHCOR'' + R'OH",
+    "info": "The condensation of an ester with a primary amide to form an imide structure.",
+    "fact": "This reaction requires relatively vigorous conditions compared to simple aminolysis due to the lower nucleophilicity of the amide nitrogen."
+  },
+"amide-halogen": {
+    "name": "Hofmann Rearrangement",
+    "formula": "RCONH₂ + Br₂ + 4KOH → RNH₂ + K₂CO₃ + 2KBr + 2H₂O",
+    "info": "The treatment of a primary amide with a halogen in the presence of a strong base to produce a primary amine with one fewer carbon atom.",
+    "fact": "The reaction proceeds through an isocyanate intermediate and is a classic method for shortening a carbon chain."
+  },
+  "amide-carboxylic_acid": {
+    "name": "N-Acylation of Amides",
+    "formula": "RCONH₂ + R'COOH → RCONHCOR' + H₂O",
+    "info": "The dehydration-condensation between an amide and a carboxylic acid to form a secondary amide (imide).",
+    "fact": "This reaction typically requires high temperatures or dehydrating agents to overcome the low nucleophilicity of the amide nitrogen."
+  },
+  "amide-amine": {
+    "name": "Transamidation",
+    "formula": "RCONH₂ + R'NH₂ → RCONHR' + NH₃",
+    "info": "A nucleophilic acyl substitution where a primary or secondary amine replaces the ammonia leaving group of a primary amide.",
+    "fact": "The reaction is often driven by the removal of the volatile ammonia gas from the reaction mixture."
+  },
+  "acyl_cl-amide": {
+    "name": "Imide Synthesis via Acyl Halides",
+    "formula": "RCONH₂ + R'COCl → RCONHCOR' + HCl",
+    "info": "The acylation of an amide using a highly reactive acyl chloride to produce a diacylamine (imide).",
+    "fact": "A base like pyridine is often added to neutralize the hydrogen chloride byproduct and accelerate the reaction."
+  },
+"amide-reduction": {
+    "name": "Lithium Aluminum Hydride Reduction",
+    "formula": "RCONH₂ (LiAlH₄) → RCH₂NH₂",
+    "info": "The complete reduction of the carbonyl group in an amide to a methylene group, yielding a primary amine.",
+    "fact": "Unlike esters or carboxylic acids which reduce to alcohols, amides retain the nitrogen atom during LiAlH₄ reduction."
+  },
+  "amide-aldehyde": {
+    "name": "Aldehyde-Amide Condensation",
+    "formula": "2RCONH₂ + R'CHO → R'CH(NHCOR)₂ + H₂O",
+    "info": "The condensation of two equivalents of an amide with one equivalent of an aldehyde to form a gem-bis-amide.",
+    "fact": "This reaction is the nitrogen analog of acetal formation and is often catalyzed by trace amounts of acid."
+  },
+  "amide-nitrile": {
+    "name": "Nitrile Synthesis (Dehydration)",
+    "formula": "RCONH₂ (P₂O₅, Δ) → RCN + H₂O",
+    "info": "The dehydration of a primary amide using a strong dehydrating agent like phosphorus pentoxide to form a nitrile.",
+    "fact": "Thionyl chloride (SOCl₂) is frequently used as a milder alternative to P₂O₅ for this transformation."
+  },
+"alcohol-nitrile": {
+    "name": "Pinner Reaction",
+    "formula": "RCN + R'OH + HCl → RC(OR')=NH · HCl",
+    "info": "The acid-catalyzed addition of an alcohol to a nitrile to produce an imino ester hydrochloride (Pinner salt).",
+    "fact": "Pinner salts are versatile intermediates that can be further reacted to form esters, amides, or orthocarbonates."
+  },
+  "nitrile-phenol": {
+    "name": "Hoesch Reaction (Houben-Hoesch Synthesis)",
+    "formula": "RCN + C₆H₅OH + HCl → HOC₆H₄C(R)=NH·  HCl",
+    "info": "A specialized form of Friedel-Crafts acylation where a nitrile reacts with a phenol or phenolic ether in the presence of a Lewis acid.",
+    "fact": "This reaction is particularly effective for activated aromatic rings like polyhydric phenols to yield hydroxy-aryl ketones after hydrolysis."
+  },
+  "carboxylic_acid-nitrile": {
+    "name": "Acylation of Nitriles",
+    "formula": "RCN + R'COOH (Δ) → RCONHCOR'",
+    "info": "The thermal reaction between a nitrile and a carboxylic acid to synthesize secondary amides (imides).",
+    "fact": "This reaction involves the nucleophilic attack of the acid on the activated cyano carbon followed by rearrangement."
+  },
+  "benzene-nitrile": {
+    "name": "Gattermann Synthesis",
+    "formula": "RCN + C₆H₆ + HCl → C₆H₅C(R)=NH·HCl",
+    "info": "The electrophilic aromatic substitution of a nitrile onto a benzene ring to form an imine salt.",
+    "fact": "This is a key method for introducing an acyl group onto an aromatic ring through the hydrolysis of the resulting imine."
+  },
+"nitrile-sulfur": {
+    "name": "Thioamide Formation",
+    "formula": "RCN + H₂S → RCSNH₂",
+    "info": "The nucleophilic addition of hydrogen sulfide across the carbon-nitrogen triple bond of a nitrile.",
+    "fact": "Thioamides are useful precursors in the synthesis of heterocycles like thiazoles."
+  },
+  "amine-nitrile": {
+    "name": "Amidine Synthesis",
+    "formula": "RCN + R'NH₂ (Δ) → RC(=NH)NHR'",
+    "info": "The addition of a primary or secondary amine to a nitrile to produce a substituted amidine.",
+    "fact": "Amidines are highly basic compounds and serve as structural motifs in many pharmaceutical agents."
+  },
+  "alkene-nitrile": {
+    "name": "Ritter Reaction",
+    "formula": "RCN + R'CH=CH2 (H₂SO₄) → R'CH(CH₃)NHCOR",
+    "info": "The acid-catalyzed transformation of a nitrile and an alkene into an N-substituted amide.",
+    "fact": "This reaction proceeds via a carbocation intermediate, making it highly effective for forming amides from tertiary or stabilized secondary carbons."
+  },
+  "nitrile-oxidation": {
+    "name": "Radziszewski Oxidation",
+    "formula": "RCN + H₂O₂ (OH⁻) → RCONH₂ + O₂",
+    "info": "The alkaline oxidation of a nitrile using hydrogen peroxide to yield a primary amide.",
+    "fact": "This method is preferred over standard hydrolysis for sensitive molecules because it occurs under milder, controlled conditions."
+  },
+  "nitrile-reduction": {
+    "name": "Lithium Aluminum Hydride Reduction",
+    "formula": "RCN (LiAlH₄) → RCH₂NH₂",
+    "info": "The complete reduction of the cyano group to a primary amino group using a strong hydride source.",
+    "fact": "While LiAlH₄ provides primary amines, partial reduction with DIBAL-H can stop at the imine stage to yield aldehydes after hydrolysis."
+  },
+  "ester-nitrile": {
+    "name": "Blaise-type Condensation",
+    "formula": "RCN + R'CH₂COOR'' (NaOR'') → R'CH(CN)COR",
+    "info": "The condensation of a nitrile with an active methylene compound, such as an ester, in the presence of a base.",
+    "fact": "This reaction allows for the formation of beta-keto nitriles, which are versatile building blocks in organic synthesis."
+  },
+
+
+    "acyl_cl-carboxylic_acid": {
+      "name": "Acid Anhydride Synthesis",
+      "formula": "RCOCl + R'COOH → R-CO-O-CO-R' + HCl",
+      "info": "When an acyl chloride reacts with a carboxylic acid, the hydroxyl oxygen of the acid acts as a nucleophile, attacking the carbonyl carbon of the acyl chloride.",
+      "fact": "Pyridine is typically added to the reaction mixture; It acts as a base to neutralize the HCl gas produced, and it acts as a nucleophilic catalyst."
+    },
+    "alkene-sulfur": {
+      "name": "Alkene Sulphonation",
+      "formula": "CH₂=CH₂ + H₂SO₄ → CH₂-CH₂-OSOH₃",
+      "info": "When an alkene reacts with cold, concentrated sulphuric acid, it undergoes an addition reaction to form an alkyl hydrogen sulphate.",
+      "fact": "In industrial chemistry, this reaction is fundamental for producing Alpha-Olefin Sulphonates (AOS), which are widely used as biodegradable detergents and surfactants."
+    }
+  }
+}

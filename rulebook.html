@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical RuleBook</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="home-page" class="view">
+        <img src="images/Logo.PNG" alt="ChemLab Logo" style="height: 100px; position: absolute; top: 2.5rem; left: 46rem; z-index: 999; opacity: 0.20;">
+        <header class="app-header">
+            <h1>Chemical RuleBook</h1>
+            <p>Select any rule to see how it applies</p>
+        </header>
+
+        <div id="element-grid" class="grid"></div>
+
+        <div class="dock">
+           <button id="combine-btn" disabled>View Rule</button>
+        </div>
+    </main>
+
+     <main id="result-page" class="view hidden">
+    <div class="result-card">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <button class="back-btn" onclick="goToHome()">← Reset ChemicalRuleBook</button>
+            <img src="images/Logo.PNG" alt="ChemLab Logo" style="height: 100px; opacity: 0.2;">
+        </div>
+        <div class="info-section">
+            <h3>Theory</h3>
+            <p id="formula-text"></p>
+
+            <h3 style="margin-top: 1.5rem;">Example 1</h3>
+            <div class="formula-display" style="font-size: 1.1rem; padding: 1rem 1.5rem; margin-bottom: 0.75rem;">
+                <span id="ex1-formula"></span>
+            </div>
+            <p id="reaction-info" style="color: var(--light);"></p>
+
+            <h3 style="margin-top: 1.5rem;">Example 2</h3>
+            <div class="formula-display" style="font-size: 1.1rem; padding: 1rem 1.5rem; margin-bottom: 0.75rem;">
+                <span id="ex2-formula"></span>
+            </div>
+            <p id="reaction-fact" style="color: var(--light);"></p>
+        </div>
+    </div>
+
+</main><main id="result-page" class="view hidden">
+    <div class="result-card">
+        <button class="back-btn" onclick="goToHome()">← Back to RuleBook</button>
+        <h2 id="reaction-name"></h2>
+
+        <div class="info-section">
+            <h3>Theory</h3>
+            <p id="formula-text"></p>
+
+            <h3 style="margin-top: 1.5rem;">Example 1</h3>
+            <div class="formula-display" style="font-size: 1.1rem; padding: 1rem 1.5rem; margin-bottom: 0.75rem;">
+                <span id="ex1-formula"></span>
+            </div>
+            <p id="reaction-info" style="color: var(--light);"></p>
+
+            <h3 style="margin-top: 1.5rem;">Example 2</h3>
+            <div class="formula-display" style="font-size: 1.1rem; padding: 1rem 1.5rem; margin-bottom: 0.75rem;">
+                <span id="ex2-formula"></span>
+            </div>
+            <p id="reaction-fact" style="color: var(--light);"></p>
+        </div>
+    </div>
+</main>
+
+    <script src="rules.js"></script>
+    <script src="rulebook.js"></script>
+</body>
+</html>
